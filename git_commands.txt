@@ -63,4 +63,4 @@ Run from the root of the project:
 "start":"node src/app.js"
 3) Change the port of the src/app.js uses to process.env.PORT
 4) Change the url that fetch() uses in the public/app.js from "http://localhost:3000" to "/"
-5) 
+5) Then make  1) git add . 2) git commit -m "Setup app for Heroku" 3) git push
