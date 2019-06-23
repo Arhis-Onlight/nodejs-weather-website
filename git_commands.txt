@@ -1,0 +1,66 @@
+         []
+        [][]
+[] [] [] [] [] [] [] 
+        [][]
+         []
+         /\
+        -----
+      //     \\
+     -----------
+    //  HEROKU  \\ 
+   ---------------- 
+  // GIT COMMANDS  \\  
+ =-=-=-=-=-=-=-=-=-=-=
+
+
+1) git init  // Only once
+2) git status
+3) Make the .gitignore file and add there "node_modules/"
+4) git add src/
+5) git add .   // Adding all files
+6) git commit -m "Init commit"
+
+  After changes
+
+7) git add .
+8) git commit -m "Message"
+
+
+  At the git bush or just in a bush in Linux/Mac OS
+
+1) ls -a -l ~/.ssh
+2) ssh-keygen -t rsa -b 4096 -C "13.23.666.as@gmail.com"
+3) eval "${ssh-agent -s}" // on windows, without "" or try eval `ssh-agent -s`
+4) ssh-add -K ~/.ssh/id_rsa // "-K" only for Mac-OS
+
+ Push all on the GitHub
+
+5) git remote add origin https://github.com/Arhis-Onlight/nodejs-weather-website.git
+
+ Get a public key value
+
+1) cat ~/.ssh/id_rsa.pub
+2) Add the key on the GitHub throw out the settings on profile
+
+ Testing the connection
+
+1) ssh -T git@github.com
+
+Push stuff to gitHub
+
+6) git push -u origin master
+
+
+=====================
+// Heroku commands //
+=====================
+
+1) heroku keys:add
+
+Run from the root of the project: 
+1) heroku create arhis-weather-app
+2) Add script to the package.json 
+"start":"node src/app.js"
+3) Change the port of the src/app.js uses to process.env.PORT
+4) Change the url that fetch() uses in the public/app.js from "http://localhost:3000" to "/"
+5) 
