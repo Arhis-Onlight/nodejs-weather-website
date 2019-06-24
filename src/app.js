@@ -57,7 +57,7 @@ app.get('/help', (req, res)=> {
         icon,
         title: 'Help',
         name: vars.name,
-        message: "You can get a weather on main page. This web using NodeJS Server and API",
+        message: "You can get a weather on main page. This web using NodeJS, ExpressJS and side API",
     })
 })
 app.get('/weather', (req, res)=>{    
