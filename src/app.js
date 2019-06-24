@@ -28,7 +28,7 @@ app.use( express.static(publicDirectoryPath) );
 //Setup some variables 
 const vars = {    
     cssPath,
-    name: 'Victor',
+    name: 'Arhis Onlight',
 };
 
 app.get('', (req, res) => {
@@ -57,7 +57,7 @@ app.get('/help', (req, res)=> {
         icon,
         title: 'Help',
         name: vars.name,
-        message: "This is a message :D",
+        message: "You can get a weather on main page. This web using NodeJS Server and API",
     })
 })
 app.get('/weather', (req, res)=>{    

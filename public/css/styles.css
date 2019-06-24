@@ -1,23 +1,33 @@
 body {
-    color: rgb(141, 84, 197);
+    color: rgb(51, 42, 42);
     font-family: arial;
-    max-width: 650px;
-    margin: 0 auto;
-    padding: 0 16px;
+    max-width: 100%;
+    margin: 0 auto;    
+    text-align: center;
 
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background: rgb(241, 201, 201);
+    
 }
 
-header{
-    margin-top: 16px;
+header{     
+    padding: 16px;
     margin-bottom: 48px;
+    width: 100%;
+    color: rgb(228, 213, 243);   
+    background-image: url('/img/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
 }
 
 header a {
-    color: rgb(129, 77, 182); 
+    color: rgb(238, 212, 212); 
     margin-right: 16px;
+    -webkit-text-stroke: 0.3px #111;
     text-decoration: none;
 }
 
@@ -27,14 +37,18 @@ h1{
 }
 
 footer {
-    color: rgb(129, 77, 182);
+    display:block;
+    color: rgb(224, 154, 154);
     border-top: 1px solid  rgb(181, 146, 216);
     margin-top: 16px;
-    padding: 16px 0;    
+    padding: 16px 0;
+    background: rgb(245, 92, 92); 
+    width: 100%;    
 }
 
 .main-content {
     flex-grow: 1;
+    
 }
 
 .portrait {
@@ -52,4 +66,9 @@ button {
     background: #888;
     color: #fff;
     padding: 8px;
+}
+
+#messageBox {
+    max-width: 60%;    
+    margin: 0 auto;    
 }
