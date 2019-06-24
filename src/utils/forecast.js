@@ -11,7 +11,7 @@ const forecast = (lontitude, latitude, callback) =>{
             return callback(err, undefined);
         }       
         callback(undefined, {
-            forecast: `${body.daily.data[0].summary} Temperature now is about ${body.currently.temperature}°C. Minimum is ${body.daily.data[0].apparentTemperatureLow}°C, Maximum: ${body.daily.data[0].apparentTemperatureHigh}°C. And a chance of rain is about ${body.currently.precipProbability}%`
+            forecast: `${body.daily.data[0].summary} Temperature now is about ${body.currently.temperature}°C. Minimum is ${body.daily.data[0].temperatureLow}°C, Maximum: ${body.daily.data[0].temperatureHigh}°C. And a chance of rain is about ${body.currently.precipProbability}%`
         }); 
         
     });
